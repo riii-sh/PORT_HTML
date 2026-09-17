@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="H1" style="text-align: center; font-size: 400%;">Welcome to My Website!</h1>
+
+    <div class="video-container">
+  <!-- The Video Background -->
+  <video autoplay muted loop playsinline>
+    <source src="VIDEOS/background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <img class="background-image" src="IMAGES/bgpic.jpeg" alt="Background Image">
+  <img class="prof" src="IMAGES/pic.jpeg" alt="Picture">
+  <img class="po" src="IMAGES/point.png" alt="Picture">
+  
+    </div>
+
+    <audio class="audio-controls" controls autoplay loop> 
+    <source src="AUDIOS/the 1975.mp3" type="audio/mp3">
+  </audio>
+  <audio src="AUDIOS/the 1975.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+    <h2 class="title-name">
+        Romina Ishi Sanchez
+    </h2>
+
+    <p class="desc">
+        Technology had been my passion for a long time and I had always been fascinated by the<br />
+        world of programming. For a long while, I had been going and trying for as long <br />
+        as I can only to run on some roadblocks ahead, never the less, I perseversed <br />
+        and studied hard for this field and right now I am happy to be a computer <br />
+        science major.<br />
+        <b>Some of the things I am learning at the moment are:</b>
+            <ul class="desc">
+                <li><i>HTML</i></li>
+                <li><i>CSS</i></li>
+                <li><i>Python</i></li>
+                <li><i>Java</i></li>
+                <li><i>CyberSecurity</i></li>
+            </ul>
+    </p>
+
+    <a href="index.html">
+      <button class="more">
+        HOME
+      </button>
+    </a>
+
+    <a  href="contact.html">
+      <button class="contact">
+        Contact me!
+      </button> 
+    </a>
+
+
+  <style>
+
+.po {
+    position: relative;
+    top: 230px;
+    left: 950px;
+    height: 550px;
+    width: 230px;
+}
+
+.more {
+    position: relative;
+    font-weight: bold;
+    color:  rgb(255, 255, 255);
+    bottom: 350px;
+    left: 1500px;
+    z-index: 2;
+    font-size: 45px;
+    border: none;
+    background-color: rgb(241, 134, 197);
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+.more:hover {
+    background-color: rgb(247, 106, 188);
+    opacity: 0.8;
+}
+
+.contact {
+     position: relative;
+      font-weight: bold;
+     color:  rgb(255, 255, 255);
+     bottom: 230px;
+    left: 1320px;
+    z-index: 2;
+    font-size: 45px;
+    border: none;
+    background-color: rgb(241, 134, 197);
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+.contact:hover {
+    background-color: rgb(247, 106, 188);
+    opacity: 0.8;
+}
+
+
+.audio-controls {
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3; /* ensure audio controls are above other elements */
+}
+
+.H1 {
+    color: rgb(243, 94, 181);
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(247, 106, 188));
+    height: 80px;
+    margin-top: 0;
+}
+.desc {
+    position: relative;
+   font-size: 25px;
+   top: -45px;
+   left:20%;
+   right: 20%;
+   line-height: 1.5;
+}
+
+.title-name {
+    position: relative;
+    font-size: 40px;
+    left: 1000px;
+    top: -80px;
+    z-index: 2;
+    transform: translate(-50%, -50%); /* adjust size as needed */
+
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* image above video */
+  opacity: 0.6; /* adjust to taste — lower = more video shows through */
+}
+
+.prof {
+  position: relative;
+  right: 100px;
+  left: 200px; ;
+  top: 320px;
+  border-radius: 20%;
+  border: 5px solid rgb(250, 247, 249);
+  transform: translate(-50%, -50%);
+  z-index: 1; /* image above video and background image */
+  width: 300px; /* adjust size as needed */
+  height: auto; /* maintain aspect ratio */
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -2; /* whole container behind page content */
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -2; /* video at the back */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+</style>
+
+</body>
+</html>
